@@ -1,0 +1,18 @@
+<%@ Page Language="C#" Inherits="CrownPeak.Internal.Debug.InputInit" %>
+<%@ Import Namespace="CrownPeak.CMSAPI" %>
+<%@ Import Namespace="CrownPeak.CMSAPI.Services" %>
+<!--DO NOT MODIFY CODE ABOVE THIS LINE-->
+<%@ Import Namespace="Component_Library.Component_Project.Components" %>
+<% //MODIFY or ADD Import Statements to Define Namespaces Used by the Template %>
+<%//This plugin uses InputContext as its context class type%>
+<%
+// input.aspx: template file to specify content entry input form
+//LiveAgent Fields
+Input.ShowHeader("Widget Options");
+Input.ShowAcquireImage("LiveAgent Image", "la_image");
+Input.ShowHeader("Salesforce LiveAgent");
+var wysiwygparams = ServicesInput.FullWYSIWYG();
+wysiwygparams.InsertHTML = true;
+wysiwygparams.DesignEditTabs = true; //switches on code button for source editing
+Input.ShowWysiwyg("LiveAgent Script", "la_script", wysiwygparams);
+%>
