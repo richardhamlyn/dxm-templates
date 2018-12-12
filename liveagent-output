@@ -1,0 +1,104 @@
+<%@ Page Language="C#" Inherits="CrownPeak.Internal.Debug.OutputInit" %>
+<%@ Import Namespace="CrownPeak.CMSAPI" %>
+<%@ Import Namespace="CrownPeak.CMSAPI.Services" %>
+<!--DO NOT MODIFY CODE ABOVE THIS LINE-->
+<%@ Import Namespace="Component_Library.Component_Project.Components" %>
+<% //MODIFY or ADD Import Statements to Define Namespaces Used by the Template %>
+<%//This plugin uses OutputContext as its context class type%>
+<% 
+   // output.aspx: template file to specify the published content in site HTML
+   // if no preview.aspx exists, then this is used by default for preview
+ %>
+<!--
+This template implements the Salesforce Live Agent.  To link it to your Salesforce LiveAgent, simply add the code from your Salesforce App in the Form.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BlackSheep Dev 2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8"/>
+<%= ServicesOutput.RenderCSSLink("/Demonstration Environments (v1)/Integrations/_Assets/css/style.css") %>
+</head>
+<body >
+<!-- Test Header -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">BlackSheep Dev</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Live Agent Button -->
+    <div id="liveagent_button_online_5731v0000008gLS" class="button_wrap" style="display: none">
+        <a class="button_aLeft" id="button_aLeft" onclick="liveagent.startChat('5731v0000008gLS')"><span>Online - Let's chat</span></a>
+        <a class="button_bLeft slidebttn" id="button_bLeft" onclick="liveagent.startChat('5731v0000008gLS')"><img src="<%= asset["la_image"]%>" width="25"></a>
+    </div>
+    <div id="liveagent_button_offline_5731v0000008gLS" class="button_wrap" style="display: none">
+        <a class="button_aRight" id="button_aRight"><span>Offline - please try later</span></a>
+        <a class="button_bRight slidebttn" id="button_bRight"><span><img src="<%= asset["la_image"]%>" width="25"></span></a>
+    </div>
+      <script type="text/javascript">
+      if (!window._laq) { window._laq = []; }
+      window._laq.push(function(){liveagent.showWhenOnline('5731v0000008gLS', document.getElementById('liveagent_button_online_5731v0000008gLS'));
+      liveagent.showWhenOffline('5731v0000008gLS', document.getElementById('liveagent_button_offline_5731v0000008gLS'));
+      });</script>
+  
+<div class="container">
+  <h3>BlackSheep</h3>
+  <p>This is a Live Agent demo integrated with Salesforce Chat.</p>
+  <p>Please click the link below if an Agent is around.</p>
+  
+<!-- Test Content -->
+<div class="container">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris sit amet massa vitae tortor condimentum. Massa sapien faucibus et molestie ac feugiat. Bibendum enim facilisis gravida neque convallis a cras semper. Elit at imperdiet dui accumsan sit amet. Praesent semper feugiat nibh sed pulvinar proin. At in tellus integer feugiat scelerisque varius. Quis varius quam quisque id diam. Netus et malesuada fames ac turpis egestas sed tempus urna. Eu consequat ac felis donec et odio.
+
+    At varius vel pharetra vel turpis nunc eget. Nec dui nunc mattis enim ut tellus elementum sagittis. Nunc faucibus a pellentesque sit. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Ac turpis egestas maecenas pharetra convallis posuere morbi leo. Fringilla phasellus faucibus scelerisque eleifend donec. Eget egestas purus viverra accumsan in nisl. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Amet facilisis magna etiam tempor orci eu lobortis. Pretium lectus quam id leo in vitae turpis massa. Enim neque volutpat ac tincidunt vitae semper quis. Eget gravida cum sociis natoque. Sem integer vitae justo eget magna fermentum iaculis. Molestie at elementum eu facilisis sed odio. Erat nam at lectus urna duis convallis convallis tellus.
+    
+    Tempus quam pellentesque nec nam aliquam sem. Et leo duis ut diam quam nulla porttitor massa. Tincidunt id aliquet risus feugiat in ante metus dictum. Vitae et leo duis ut. A cras semper auctor neque vitae tempus quam pellentesque. Orci eu lobortis elementum nibh tellus molestie nunc non. Non nisi est sit amet facilisis magna. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc. Velit dignissim sodales ut eu sem integer vitae justo. Massa tempor nec feugiat nisl pretium fusce. Hendrerit gravida rutrum quisque non tellus orci. Morbi tristique senectus et netus et malesuada fames ac.
+    
+    Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet. Dolor sit amet consectetur adipiscing elit duis tristique. Posuere urna nec tincidunt praesent semper. Pellentesque elit eget gravida cum. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. In ante metus dictum at tempor commodo ullamcorper. Lorem dolor sed viverra ipsum. Tempus iaculis urna id volutpat lacus laoreet non. Id neque aliquam vestibulum morbi blandit cursus risus. Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo. Cras fermentum odio eu feugiat pretium nibh. Vitae tempus quam pellentesque nec nam aliquam.
+    
+    Vel turpis nunc eget lorem dolor sed viverra ipsum. Vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra. Elit ut aliquam purus sit. At augue eget arcu dictum varius. Vestibulum sed arcu non odio euismod lacinia. Consequat semper viverra nam libero justo laoreet sit amet. Eu mi bibendum neque egestas congue quisque. Morbi tristique senectus et netus et. Pretium vulputate sapien nec sagittis. Erat imperdiet sed euismod nisi. Nibh praesent tristique magna sit amet purus. In fermentum posuere urna nec. In dictum non consectetur a. Turpis egestas integer eget aliquet nibh. Donec enim diam vulputate ut pharetra. Sed libero enim sed faucibus turpis in eu mi.
+</div>
+<!-- Chat Button Slider Script -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('.slidebttn').hover(
+            function () {
+                var $this 		= $(this);
+                var $slidelem 	= $this.prev();
+                $slidelem.stop().animate({'width':'225px'},300);
+                $slidelem.find('span').stop(true,true).fadeIn();
+                $this.addClass('button_c');
+            },
+            function () {
+                var $this 		= $(this);
+                var $slidelem 	= $this.prev();
+                $slidelem.stop().animate({'width':'70px'},200);
+                $slidelem.find('span').stop(true,true).fadeOut();
+                $this.removeClass('button_c');
+            }
+        );
+    });
+</script>
+<!-- Note:  You need your own Chat Scripts
+<!-- LiveAgent Script -->
+<script type='text/javascript' src='https://c.la1-c1-fra.salesforceliveagent.com/content/g/js/43.0/deployment.js'></script>
+<script type='text/javascript'>
+liveagent.init('https://d.la1-c1-fra.salesforceliveagent.com/chat', '5721v0000008jYF', '00D0Y000000ZAbf');
+</script>
+</body>
+</html>
